@@ -15,7 +15,7 @@ module ChemistryRails
     # Loads the Carrierwave locale files before the Rails application locales
     # letting the Rails application overrite the carrierwave locale defaults
     config.before_configuration do
-      I18n.load_path << File.join(File.dirname(__FILE__), "carrierwave", "locale", 'en.yml')
+      I18n.load_path << File.join(File.dirname(__FILE__), "chemistry_rails", "locale", 'en.yml')
     end
   end
 end

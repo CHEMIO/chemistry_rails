@@ -1,0 +1,4 @@
+en:
+  errors:
+    messages:
+      chemistry_rails_formula: is not a valid chemical formula

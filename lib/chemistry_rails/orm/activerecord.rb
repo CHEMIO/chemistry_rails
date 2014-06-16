@@ -7,7 +7,7 @@ module ChemistryRails
 
     def chemical_formula(column)
 
-      validates_format_of column, :with => /([a-zA-Z]+[0-9]*)+/i
+      validates_format_of column, with: /([a-zA-Z]+[0-9]*)+/i, message: :chemistry_rails_formula
 
     end
 
