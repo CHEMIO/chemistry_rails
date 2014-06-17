@@ -165,3 +165,20 @@ module ChemistryRails
     end
   end
 end
+
+module ChemistryRails
+  class Formula
+
+    attr_accessor :formula, :elements
+
+    def initialize(formula, options={})
+      @formula = formula
+      @options = options
+      @elements = Hash[formula.scan(/([A-Z][a-z]{0,2})(\d*)/).map{|k,v| [k, v.blank? ? 1 : v.to_i]}]
+    end
+
+    def to_s; formula; end
+    def empty?; formula.blank?; end
+
+  end
+end
