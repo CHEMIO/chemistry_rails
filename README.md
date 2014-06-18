@@ -1,7 +1,7 @@
-# chemistry_rails
+# Chemistry on Rails
 ===============
 
-A gem for validating chemical formula and calculating analysis
+A gem for validating chemical formula and calculating elemental analysis
 
 ## Installation
 
@@ -15,7 +15,7 @@ Finally, restart the server to apply the changes.
 
 ## Getting Started
 
-Start off by creating a migration with a string field for the formula (if you dont have it already):
+Start off by creating a migration with a string field for the formula (if you don't have it already):
 
 	rails generate migration add_formula_to_chemicals
 
@@ -27,11 +27,11 @@ class AddFormulaToChemicals < ActiveRecord::Migration
 end
 ```
 
-then run the migration to create the field:
+Then run the migration to create the field:
 
 	rake db:migrate
 
-Finally define the chemical_formula field in the model
+Lastly, define the chemical_formula field in the model:
 
 ```ruby
 class Chemical < ActiveRecord::Base
@@ -39,12 +39,12 @@ class Chemical < ActiveRecord::Base
 end
 ```
 
-This will attach the `ChemistryRails::Formula` class to the field and you will be able to use it as described below. Also an ActiveRecord
+This will attach the `ChemistryRails::Formula` class to the field and you will be able to use it as described below. An ActiveRecord
 validation for chemical formula will be added.
 
 ##the Formula class
 
-to initialize a new object you need to pass the chemical formula as a string:
+To initialize a new object you need to pass the chemical formula as a string:
 
 ```ruby
 formula = ChemistryRails::Formula.new('C6H6')
@@ -58,7 +58,7 @@ The object has the following properties:
   => {"C"=>6, "H"=>6}
 ```
  * `to_s` - the default ruby to string function - returns the formula as a string
- * `to_html` - it adds <sub> tags to the number of atoms, it will return:
+ * `to_html` - it adds \<sub\> tags to the number of atoms, it will return:
 ```
  > formula.to_html
   => "C<sub>6</sub>H<sub>6</sub>"
