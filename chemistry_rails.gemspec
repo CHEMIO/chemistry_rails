@@ -1,9 +1,9 @@
 Gem::Specification.new do |s|
   s.name        = 'chemistry_rails'
-  s.version     = '0.0.0'
+  s.version     = '0.1.0'
   s.date        = '2014-06-16'
   s.summary     = "Chemistry rails"
-  s.description = "A gem for validating chemical formula and calculating analysis"
+  s.description = "A gem for validating chemical formula and calculating elemental analysis"
   s.authors     = ["Radil Radenkov"]
   s.email       = 'radil@chem.io'
   s.files       = ["lib/chemistry_rails.rb"]
