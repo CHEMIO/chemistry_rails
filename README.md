@@ -1,4 +1,113 @@
-chemistry_rails
+# chemistry_rails
 ===============
 
 A gem for validating chemical formula and calculating analysis
+
+## Installation
+
+In Rails, add it to your Gemfile:
+
+```ruby
+gem 'chemistry_rails'
+```
+
+Finally, restart the server to apply the changes.
+
+## Getting Started
+
+Start off by creating a migration with a string field for the formula (if you dont have it already):
+
+	rails generate migration add_formula_to_chemicals
+
+```ruby
+class AddFormulaToChemicals < ActiveRecord::Migration
+  def change
+    add_column :chemicals, :formula, :string
+  end
+end
+```
+
+then run the migration to create the field:
+
+	rake db:migrate
+
+Finally define the chemical_formula field in the model
+
+```ruby
+class Chemical < ActiveRecord::Base
+  chemical_formula :formula
+end
+```
+
+This will attach the `ChemistryRails::Formula` class to the field and you will be able to use it as described below. Also an ActiveRecord
+validation for chemical formula will be added.
+
+##the Formula class
+
+to initialize a new object you need to pass the chemical formula as a string:
+
+```ruby
+formula = ChemistryRails::Formula.new('C6H6')
+```
+
+The object has the following properties:
+
+ * `elements` - it will return a Hash with the elements parsed from the formula with the coresponding number of atoms
+```
+ > formula.elements
+  => {"C"=>6, "H"=>6}
+```
+ * `to_s` - the default ruby to string function - returns the formula as a string
+ * `to_html` - it adds <sub> tags to the number of atoms, it will return:
+```
+ > formula.to_html
+  => "C<sub>6</sub>H<sub>6</sub>"
+```
+ * `elemental_analysis` - it will return Hash with the formula elements with corresponding precent of elemental analysis:
+```
+ > formula.elemental_analysis
+  => {"C"=>92.26, "H"=>7.74}
+```
+
+###the ChemistryRails module
+
+the module contains several useful methods:
+
+ * `elements(category=nil)` - it will return all elements in the periodic table with their properties, also it can be filtered
+ to return elements form specific category only. You need to provide the category id as integer which corresponds to the index
+ of the selected category in the ChemistryRails::ELEMENT_CATEGORIES array. There are also shortcut methods for that below.
+ * `element(label)` - returns the properties of a specific element
+```
+ > ChemistryRails.element('He')
+  => {:short=>"He", :long=>"Helium", :mass=>4.0026, :category=>7}
+```
+ * `alkali_metals`
+ * `alkaline_earth`
+ * `transition_metals`
+ * `basic_metals`
+ * `semi_metals`
+ * `non_metals`
+ * `halogens`
+ * `noble_gases`
+ * `lanthanides`
+ * `actinides`
+
+constants:
+
+ * `ELEMENTS` - used by the `elements` method above. You can use it to get an array of all elements for a dropdown list for example:
+```
+ > ChemistryRails::ELEMENTS.select{|i| i.present?}.map{|i| i[:short].to_sym}
+  => [:H, :He, :Li, :Be, :B, :C, ..... ]
+```
+ * `ELEMENT_CATEGORIES` - the category id of each element points to this array
+
+## Contributing
+
+We welcome contributions to the repo. Please follow a Github friendly process:
+
+1. Fork the repository on Github
+2. Create a named feature branch
+3. Write your change
+4. Write tests for your change (if applicable)
+5. Run the tests, ensuring they all pass
+6. Submit a Pull Request using Github
