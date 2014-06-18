@@ -9,4 +9,8 @@ Gem::Specification.new do |s|
   s.files       = ["lib/chemistry_rails.rb"]
   s.homepage    = 'http://rubygems.org/gems/chemistry_rails'
   s.license     = 'MIT'
+
+  s.add_development_dependency 'rake'
+  s.add_development_dependency 'rspec'
+  s.add_development_dependency 'rails', '>= 3.2.0'
 end

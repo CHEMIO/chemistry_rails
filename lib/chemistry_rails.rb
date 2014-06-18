@@ -130,7 +130,7 @@ module ChemistryRails
   class << self
 
     def elements(category = nil)
-      category ? ELEMENTS.select {|e| e[:category] == category} : ELEMENTS
+      category ? ELEMENTS.select {|e| e && e[:category] == category} : ELEMENTS
     end
 
     def element(short)
@@ -185,11 +185,11 @@ module ChemistryRails
     def empty?; formula.blank?; end
 
     def to_html
-      elements.map { |el, i|  "#{el}<sub>#{i > 1 ? i : ''}</sub>" }.join('').html_safe
+      elements.map { |el, i|  "#{el}<sub>#{i > 1 ? i : ''}</sub>" }.join('')
     end
 
     def elemental_analysis(include_oxygen = false)
-      mass = elements.map { |el, i|  ChemistryRails.element(el)[:mass] * i }.sum
+      mass = elements.map { |el, i|  ChemistryRails.element(el)[:mass] * i }.inject{|sum,x| sum + x }
 
       Hash[
           elements.map { |el, i|
