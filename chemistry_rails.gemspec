@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.authors     = ["Radil Radenkov"]
   s.email       = 'radil@chem.io'
   s.files       = ["lib/chemistry_rails.rb"]
-  s.homepage    = 'http://rubygems.org/gems/chemistry_rails'
+  s.homepage    = 'https://github.com/CHEMIO/chemistry_rails'
   s.license     = 'MIT'
 
   s.add_development_dependency 'rake'
