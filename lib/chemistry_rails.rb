@@ -180,5 +180,9 @@ module ChemistryRails
     def to_s; formula; end
     def empty?; formula.blank?; end
 
+    def to_html
+      elements.map { |el, i|  "#{el}<sub>#{i > 1 ? i : ''}</sub>" }.join('').html_safe
+    end
+
   end
 end
