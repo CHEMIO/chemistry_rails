@@ -133,6 +133,10 @@ module ChemistryRails
       category ? ELEMENTS.select {|e| e[:category] == category} : ELEMENTS
     end
 
+    def element(short)
+      ELEMENTS.select{|e| e && e[:short] == short}.first
+    end
+
     def alkali_metals;    elements(0); end
     def alkaline_earth;   elements(1); end
     def transition_metals;elements(2); end
@@ -182,6 +186,16 @@ module ChemistryRails
 
     def to_html
       elements.map { |el, i|  "#{el}<sub>#{i > 1 ? i : ''}</sub>" }.join('').html_safe
+    end
+
+    def elemental_analysis(include_oxygen = false)
+      mass = elements.map { |el, i|  ChemistryRails.element(el)[:mass] * i }.sum
+
+      Hash[
+          elements.map { |el, i|
+            [ el, (ChemistryRails.element(el)[:mass] * i / mass * 100).round(2) ]
+          }
+      ]
     end
 
   end
