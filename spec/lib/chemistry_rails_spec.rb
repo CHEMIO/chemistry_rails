@@ -29,9 +29,19 @@ describe ChemistryRails::Formula do
     expect(formula.elements['H']).to eq(6)
   end
 
+  it "supports OH compounds" do
+    formula = ChemistryRails::Formula.new('C2H5OH')
+    expect(formula.elements).to have_key('C')
+    expect(formula.elements).to have_key('H')
+    expect(formula.elements['C']).to eq(2)
+    expect(formula.elements['H']).to eq(5)
+    expect(formula.to_html).to eq('C<sub>2</sub>H<sub>5</sub>OH')
+  end
+
   it "generates an html string for the formula" do
     formula = ChemistryRails::Formula.new('C6H6')
     expect(formula.to_html).to include('<sub>')
+    expect(formula.to_html).to eq('C<sub>6</sub>H<sub>6</sub>')
   end
 
   it "calculates elemental analysis" do
