@@ -195,7 +195,7 @@ module ChemistryRails
       mass = elements.map { |el, i|  ChemistryRails.element(el)[:mass] * i }.inject{|sum,x| sum + x }
 
       Hash[
-          elements.map { |el, i|
+          elements.select {|k, _| ['C', 'H', 'N', 'S', 'P'].include? k }.map { |el, i|
             [ el, (ChemistryRails.element(el)[:mass] * i / mass * 100).round(2) ]
           }
       ]

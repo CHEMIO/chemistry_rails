@@ -45,9 +45,10 @@ describe ChemistryRails::Formula do
   end
 
   it "calculates elemental analysis" do
-    formula = ChemistryRails::Formula.new('C6H6')
+    formula = ChemistryRails::Formula.new('C2H5OH')
     expect(formula.elemental_analysis).to be_a(Hash)
-    expect(formula.elemental_analysis['C']).to eq(92.26)
-    expect(formula.elemental_analysis['H']).to eq(7.74)
+    expect(formula.elemental_analysis['C']).to eq(82.66)
+    expect(formula.elemental_analysis['H']).to eq(17.34)
+    expect(formula.elemental_analysis).not_to have_key('O')
   end
 end
