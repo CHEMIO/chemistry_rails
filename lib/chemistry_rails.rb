@@ -178,9 +178,6 @@ module ChemistryRails
     def initialize(formula, options={})
       @formula = formula
       @options = options
-      if @is_OH = (formula.scan(/OH$/).length > 0)
-        formula = formula.gsub(/OH$/,'')
-      end
       @elements = Hash[formula.scan(/([A-Z][a-z]{0,2})(\d*)/).map{|k,v| [k, v.blank? ? 1 : v.to_i]}]
     end
 
@@ -188,7 +185,7 @@ module ChemistryRails
     def empty?; formula.blank?; end
 
     def to_html
-      elements.map { |el, i|  "#{el}<sub>#{i > 1 ? i : ''}</sub>" }.join('')+(@is_OH ? 'OH' : '')
+      elements.map { |el, i|  "#{el}<sub>#{i > 1 ? i : ''}</sub>" }.join('')
     end
 
     def elemental_analysis(include_oxygen = false)
