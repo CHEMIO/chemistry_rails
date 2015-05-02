@@ -42,4 +42,13 @@ describe ChemistryRails::Formula do
     expect(formula.elemental_analysis['H']).to eq(13.13)
     expect(formula.elemental_analysis).not_to have_key('O')
   end
+
+  it "validates elements" do
+    formula = ChemistryRails::Formula.new('C6H6')
+    expect(formula.valid_elements?).to eq(true)
+    expect(formula.elemental_analysis).to be_a(Hash)
+    formula = ChemistryRails::Formula.new('C6H6D')
+    expect(formula.valid_elements?).to eq(false)
+    expect(formula.elemental_analysis).to be_a(Hash)
+  end
 end
