@@ -45,10 +45,10 @@ describe ChemistryRails::Formula do
 
   it "validates elements" do
     formula = ChemistryRails::Formula.new('C6H6')
-    expect(formula.valid_elements?).to eq(true)
+    expect(formula.all_elements_valid?).to eq(true)
     expect(formula.elemental_analysis).to be_a(Hash)
     formula = ChemistryRails::Formula.new('C6H6D')
-    expect(formula.valid_elements?).to eq(false)
+    expect(formula.all_elements_valid?).to eq(false)
     expect(formula.elemental_analysis).to be_a(Hash)
   end
 end

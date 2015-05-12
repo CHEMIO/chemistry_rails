@@ -189,7 +189,7 @@ module ChemistryRails
     end
 
     def elemental_analysis(include_oxygen = false)
-      return {} unless valid_elements?
+      return {} unless all_elements_valid?
       mass = elements.map { |el, i|  ChemistryRails.element(el)[:mass] * i }.inject{|sum,x| sum + x }
 
       Hash[
@@ -199,7 +199,7 @@ module ChemistryRails
       ]
     end
 
-    def valid_elements?
+    def all_elements_valid?
       elements.all? { |k, _| ChemistryRails.element(k) }
     end
   end
