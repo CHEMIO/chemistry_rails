@@ -1,3 +1,4 @@
+require 'cas_number_validator'
 module ChemistryRails
   ELEMENT_CATEGORIES = ['Alkali Metal', 'Alkaline Earth', 'Transition Metal', 'Basic Metal', 'Semimetal', 'Nonmetal', 'Halogen', 'Noble gas', 'Lanthanide', 'Actinide']
 
