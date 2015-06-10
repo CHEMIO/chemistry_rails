@@ -7,7 +7,7 @@ module ChemistryRails
 
     def chemical_formula(column)
 
-      validates_format_of column, with: /\A((#{ChemistryRails::ELEMENTS.reject(&:nil?).map{|i| i[:short] }.join('|')})+[0-9]*)+\Z/, message: :chemistry_rails_formula
+      validates_format_of column, with: /\A((#{ChemistryRails::ELEMENTS.reject(&:nil?).map{|i| i[:short] }.join('|')})+[0-9]*)+\Z/, message: :chemistry_rails_formula, if: "#{column}.present?"
 
       class_eval <<-RUBY, __FILE__, __LINE__+1
         def #{column}
