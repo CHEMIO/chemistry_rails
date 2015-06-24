@@ -26,7 +26,7 @@ module ChemistryRails
       { short: 'Ca', long: 'Calcium',      mass: 40.078,    category: 1 },    #20
       { short: 'Sc', long: 'Scandium',     mass: 44.95591,  category: 2 },
       { short: 'Ti', long: 'Titanium',     mass: 47.88,     category: 2 },
-      { short: 'V',  long: 'Venadium',     mass: 50.9415,   category: 2 },
+      { short: 'V',  long: 'Vanadium',     mass: 50.9415,   category: 2 },
       { short: 'Cr', long: 'Chromium',     mass: 51.9961,   category: 2 },
       { short: 'Mn', long: 'Manganese',    mass: 54.938,    category: 2 },
       { short: 'Fe', long: 'Iron',         mass: 54.847,    category: 2 },
