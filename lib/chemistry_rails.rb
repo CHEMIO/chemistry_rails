@@ -189,6 +189,10 @@ module ChemistryRails
       elements.map { |el, i|  "#{el}<sub>#{i > 1 ? i : ''}</sub>" }.join('')
     end
 
+    def to_rich_text
+      elements.map { |el, i|  "#{el}#{(i+8320).chr}" }.join('')
+    end
+
     def elemental_analysis(include_oxygen = false)
       return {} unless all_elements_valid?
       mass = elements.map { |el, i|  ChemistryRails.element(el)[:mass] * i }.inject{|sum,x| sum + x }

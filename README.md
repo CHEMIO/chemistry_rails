@@ -63,6 +63,9 @@ The object has the following properties:
  > formula.to_html
   => "C<sub>6</sub>H<sub>6</sub>"
 ```
+ > formula.to_rich_text
+  => "C₆H₆"
+```
  * `elemental_analysis` - it will return Hash with the formula elements with corresponding precent of elemental analysis:
 ```
  > formula.elemental_analysis
