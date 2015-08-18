@@ -190,7 +190,7 @@ module ChemistryRails
     end
 
     def to_rich_text
-      elements.map { |el, i|  "#{el}#{i.to_s.split('').map{|j| (j.to_i+8320).chr }.join('')}" }.join('')
+      elements.map { |el, i|  "#{el}#{i.to_s.split('').map{|j| (j.to_i+8320).chr }.join('') if i > 1}" }.join('')
     end
 
     def elemental_analysis(include_oxygen = false)
