@@ -1,7 +1,7 @@
 class CasNumberValidator < ActiveModel::EachValidator
   def validate_each(record,attribute,value)
     return if value.blank?
-    cas, num0, num1, control = value.match(/(\d{2,7})\-(\d\d)\-(\d)/).to_a
+    cas, num0, num1, control = value.match(/^(\d{2,7})\-(\d\d)\-(\d)$/).to_a
     unless cas
       record.errors[attribute] << (options[:message] || "format is invalid")
       return
