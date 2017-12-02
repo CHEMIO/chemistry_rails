@@ -193,72 +193,177 @@ module ChemistryRails
       },
       { short: 'Cu', long: 'Copper',       mass: 63.546,    category: 2,
         radionuclides: [
-            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
+            { name: 'Cu-60', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Cu-61', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Cu-64', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Cu-67', exemption_level: 10**9, t_medium: 100 },
         ]
       },
       { short: 'Zn', long: 'Zinc',         mass: 65.39,     category: 2,
         radionuclides: [
-            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
+            { name: 'Zn-62', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Zn-63', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Zn-65', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Zn-69', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Zn-69m', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Zn-71m', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Zn-72', exemption_level: 10**9, t_medium: 100 },
         ]
       },    # 30
       { short: 'Ga', long: 'Gallium',      mass: 69.732,    category: 3,
         radionuclides: [
-            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
+            { name: 'Ga-65', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Ga-66', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Ga-67', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Ga-68', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Ga-70', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Ga-72', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Ga-73', exemption_level: 10**9, t_medium: 100 },
         ]
       },
       { short: 'Ge', long: 'Germanium',    mass: 72.64,     category: 4,
         radionuclides: [
-            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
+            { name: 'Ge-66', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Ge-67', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Ge-68', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Ge-69', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Ge-71', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Ge-75', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Ge-77', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Ge-78', exemption_level: 10**9, t_medium: 100 },
         ]
       },
       { short: 'As', long: 'Arsenic',      mass: 74.92159,  category: 4,
         radionuclides: [
-            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
+            { name: 'As-69', exemption_level: 10**9, t_medium: 100 },
+            { name: 'As-70', exemption_level: 10**9, t_medium: 100 },
+            { name: 'As-71', exemption_level: 10**9, t_medium: 100 },
+            { name: 'As-72', exemption_level: 10**9, t_medium: 100 },
+            { name: 'As-73', exemption_level: 10**9, t_medium: 100 },
+            { name: 'As-74', exemption_level: 10**9, t_medium: 100 },
+            { name: 'As-76', exemption_level: 10**9, t_medium: 100 },
+            { name: 'As-77', exemption_level: 10**9, t_medium: 100 },
+            { name: 'As-78', exemption_level: 10**9, t_medium: 100 },
         ]
       },
       { short: 'Se', long: 'Selenium',     mass: 78.96,     category: 5,
         radionuclides: [
-            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
+            { name: 'Se-70', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Se-73', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Se-73m', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Se-75', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Se-79', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Se-81', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Se-81m', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Se-83', exemption_level: 10**9, t_medium: 100 },
         ]
       },
       { short: 'Br', long: 'Bromine',      mass: 79.904,    category: 6,
         radionuclides: [
-            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
+            { name: 'Br-74', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Br-74m', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Br-75', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Br-76', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Br-77', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Br-80', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Br-80m', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Br-82', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Br-83', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Br-84', exemption_level: 10**9, t_medium: 100 },
         ]
       },
       { short: 'Kr', long: 'Krypton',      mass: 83.80,     category: 7,
         radionuclides: [
-            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
+            { name: 'Kr-74', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Kr-76', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Kr-77', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Kr-79', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Kr-81', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Kr-81m', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Kr-83m', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Kr-85', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Kr-85m', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Kr-87', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Kr-88', exemption_level: 10**9, t_medium: 100 },
         ]
       },
       { short: 'Rb', long: 'Rubidium',     mass: 85.4678,   category: 0,
         radionuclides: [
-            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
+            { name: 'Rb-79', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Rb-81', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Rb-81m', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Rb-82m', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Rb-83', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Rb-84', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Rb-86', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Rb-87', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Rb-88', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Rb-89', exemption_level: 10**9, t_medium: 100 },
         ]
       },
       { short: 'Sr', long: 'Strontium',    mass: 87.62,     category: 1,
         radionuclides: [
-            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
+            { name: 'Sr-80', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Sr-81', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Sr-82', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Sr-83', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Sr-85', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Sr-85m', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Sr-87m', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Sr-89', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Sr-90', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Sr-91', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Sr-92', exemption_level: 10**9, t_medium: 100 },
         ]
       },
       { short: 'Y',  long: 'Yttrium',      mass: 88.90585,  category: 2,
         radionuclides: [
-            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
+            { name: 'Y-86', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Y-86m', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Y-87', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Y-88', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Y-90', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Y-90m', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Y-91', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Y-91m', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Y-92', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Y-93', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Y-94', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Y-95', exemption_level: 10**9, t_medium: 100 },
         ]
       },
       { short: 'Zr', long: 'Zirconium',    mass: 91.224,    category: 2,
         radionuclides: [
-            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
+            { name: 'Zr-86', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Zr-88', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Zr-89', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Zr-93', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Zr-95', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Zr-97', exemption_level: 10**9, t_medium: 100 },
         ]
       },    # 40
       { short: 'Nb', long: 'Niobium',      mass: 92.90638,  category: 2,
         radionuclides: [
-            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
+            { name: 'Nb-88', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Nb-89', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Nb-89m', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Nb-90', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Nb-93m', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Nb-94', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Nb-95', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Nb-95m', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Nb-96', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Nb-97', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Nb-98', exemption_level: 10**9, t_medium: 100 },
         ]
       },
       { short: 'Mo', long: 'Molybdenum',   mass: 95.94,     category: 2,
         radionuclides: [
-            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
+            { name: 'Mo-90', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Mo-93', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Mo-93m', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Mo-99', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Mo-101', exemption_level: 10**9, t_medium: 100 },
         ]
       },
       { short: 'Tc', long: 'Technetium',   mass: 98.9072,   category: 2,
