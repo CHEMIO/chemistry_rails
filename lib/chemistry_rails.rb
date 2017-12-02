@@ -6,643 +6,643 @@ module ChemistryRails
       nil,
       { short: 'H', long: 'Hydrogen', mass: 1.0079, category: 5,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'He', long: 'Helium',       mass: 4.00260,   category: 7,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Li', long: 'Lithium',      mass: 6.941,     category: 0,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Be', long: 'Beryllium',    mass: 9.01218,   category: 1,
         radionuclides: [
-            { name: 'Be-7', activity: 10**7 },
-            { name: 'Be-10', activity: 10**6 }
+            { name: 'Be-7', exemption_level: 10**7, t_medium: 100 },
+            { name: 'Be-10', exemption_level: 10**6, t_medium: 100 }
         ]
       },
       { short: 'B',  long: 'Boron',        mass: 10.811,    category: 4,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'C',  long: 'Carbon',       mass: 12.011,    category: 5,
         radionuclides: [
-            { name: 'C-11', activity: 10**6 },
-            { name: 'C-14', activity: 10**7 }
+            { name: 'C-11', exemption_level: 10**6, t_medium: 100 },
+            { name: 'C-14', exemption_level: 10**7, t_medium: 100 }
         ]
       },
       { short: 'N',  long: 'Nitrogen',     mass: 14.00674,  category: 5,
         radionuclides: [
-            { name: 'N-13', activity: 10**9 },
+            { name: 'N-13', exemption_level: 10**9, t_medium: 100 },
         ]
       },
       { short: 'O',  long: 'Oxygen',       mass: 15.9994,   category: 5,
         radionuclides: [
-            { name: 'O-15', activity: 10**9 },
+            { name: 'O-15', exemption_level: 10**9, t_medium: 100 },
         ]
       },
       { short: 'F',  long: 'Fluorine',     mass: 18.998403, category: 6,
         radionuclides: [
-            { name: 'F-18', activity: 10**9 }
+            { name: 'F-18', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Ne', long: 'Neon',         mass: 20.1797,   category: 7,
         radionuclides: [
-            { name: 'N-19', activity: 10**9 },
+            { name: 'N-19', exemption_level: 10**9, t_medium: 100 },
         ]
       },    # 10
       { short: 'Na', long: 'Sodium',       mass: 22.989768, category: 0,
         radionuclides: [
-            { name: 'Na-22', activity: 10**9 },
-            { name: 'Na-24', activity: 10**9 }
+            { name: 'Na-22', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Na-24', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Mg', long: 'Magnesium',    mass: 24.305,    category: 1,
         radionuclides: [
-            { name: 'Mg-28', activity: 10**9 }
+            { name: 'Mg-28', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Al', long: 'Aluminium',    mass: 26.981539, category: 3,
         radionuclides: [
-            { name: 'Al-26', activity: 10**9 }
+            { name: 'Al-26', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Si', long: 'Silicon',      mass: 28.0855,   category: 4,
         radionuclides: [
-            { name: 'Si-31', activity: 10**9 },
-            { name: 'Si-32', activity: 10**9 }
+            { name: 'Si-31', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Si-32', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'P',  long: 'Phosphorus',   mass: 30.973762, category: 5,
         radionuclides: [
-            { name: 'P-32', activity: 10**9 },
-            { name: 'P-33', activity: 10**9 }
+            { name: 'P-32', exemption_level: 10**9, t_medium: 100 },
+            { name: 'P-33', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'S',  long: 'Sulfur',       mass: 32.066,    category: 5,
         radionuclides: [
-            { name: 'S-35', activity: 10**9 }
+            { name: 'S-35', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Cl', long: 'Chlorine',     mass: 35.4527,   category: 6,
         radionuclides: [
-            { name: 'Cl-36', activity: 10**9 },
-            { name: 'Cl-38', activity: 10**9 },
-            { name: 'Cl-39', activity: 10**9 }
+            { name: 'Cl-36', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Cl-38', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Cl-39', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Ar', long: 'Argon',        mass: 39.948,    category: 7,
         radionuclides: [
-            { name: 'Ar-37', activity: 10**9 },
-            { name: 'Ar-39', activity: 10**9 },
-            { name: 'Ar-41', activity: 10**9 }
+            { name: 'Ar-37', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Ar-39', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Ar-41', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'K',  long: 'Potassium',    mass: 39.0983,   category: 0,
         radionuclides: [
-            { name: 'K-40', activity: 10**9 },
-            { name: 'K-42', activity: 10**9 },
-            { name: 'K-43', activity: 10**9 },
-            { name: 'K-44', activity: 10**9 },
-            { name: 'K-45', activity: 10**9 },
+            { name: 'K-40', exemption_level: 10**9, t_medium: 100 },
+            { name: 'K-42', exemption_level: 10**9, t_medium: 100 },
+            { name: 'K-43', exemption_level: 10**9, t_medium: 100 },
+            { name: 'K-44', exemption_level: 10**9, t_medium: 100 },
+            { name: 'K-45', exemption_level: 10**9, t_medium: 100 },
         ]
       },
       { short: 'Ca', long: 'Calcium',      mass: 40.078,    category: 1,
         radionuclides: [
-            { name: 'Ca-41', activity: 10**9 },
-            { name: 'Ca-45', activity: 10**9 },
-            { name: 'Ca-47', activity: 10**9 },
+            { name: 'Ca-41', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Ca-45', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Ca-47', exemption_level: 10**9, t_medium: 100 },
         ]
       },    # 20
       { short: 'Sc', long: 'Scandium',     mass: 44.95591,  category: 2,
         radionuclides: [
-            { name: 'Sc-43', activity: 10**9 },
-            { name: 'Sc-44', activity: 10**9 },
-            { name: 'Sc-45', activity: 10**9 },
-            { name: 'Sc-46', activity: 10**9 },
-            { name: 'Sc-47', activity: 10**9 },
-            { name: 'Sc-48', activity: 10**9 },
-            { name: 'Sc-49', activity: 10**9 },
+            { name: 'Sc-43', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Sc-44', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Sc-45', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Sc-46', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Sc-47', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Sc-48', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Sc-49', exemption_level: 10**9, t_medium: 100 },
         ]
       },
       { short: 'Ti', long: 'Titanium',     mass: 47.88,     category: 2,
         radionuclides: [
-            { name: 'Ti-44', activity: 10**9 },
-            { name: 'Ti-45', activity: 10**9 },
+            { name: 'Ti-44', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Ti-45', exemption_level: 10**9, t_medium: 100 },
         ]
       },
       { short: 'V',  long: 'Vanadium',     mass: 50.9415,   category: 2,
         radionuclides: [
-            { name: 'V-47', activity: 10**9 },
-            { name: 'V-48', activity: 10**9 },
-            { name: 'V-49', activity: 10**9 },
+            { name: 'V-47', exemption_level: 10**9, t_medium: 100 },
+            { name: 'V-48', exemption_level: 10**9, t_medium: 100 },
+            { name: 'V-49', exemption_level: 10**9, t_medium: 100 },
         ]
       },
       { short: 'Cr', long: 'Chromium',     mass: 51.9961,   category: 2,
         radionuclides: [
-            { name: 'Cr-48', activity: 10**9 },
-            { name: 'Cr-49', activity: 10**9 },
-            { name: 'Cr-51', activity: 10**9 },
+            { name: 'Cr-48', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Cr-49', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Cr-51', exemption_level: 10**9, t_medium: 100 },
         ]
       },
       { short: 'Mn', long: 'Manganese',    mass: 54.938,    category: 2,
         radionuclides: [
-            { name: 'Mn-51', activity: 10**9 },
-            { name: 'Mn-52', activity: 10**9 },
-            { name: 'Mn-52m', activity: 10**9 },
-            { name: 'Mn-53', activity: 10**9 },
-            { name: 'Mn-54', activity: 10**9 },
-            { name: 'Mn-56', activity: 10**9 },
+            { name: 'Mn-51', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Mn-52', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Mn-52m', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Mn-53', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Mn-54', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Mn-56', exemption_level: 10**9, t_medium: 100 },
         ]
       },
       { short: 'Fe', long: 'Iron',         mass: 54.847,    category: 2,
         radionuclides: [
-            { name: 'Fe-52', activity: 10**9 },
-            { name: 'Fe-55', activity: 10**9 },
-            { name: 'Fe-59', activity: 10**9 },
-            { name: 'Fe-60', activity: 10**9 },
+            { name: 'Fe-52', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Fe-55', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Fe-59', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Fe-60', exemption_level: 10**9, t_medium: 100 },
         ]
       },
       { short: 'Co', long: 'Cobalt',       mass: 58.9332,   category: 2,
         radionuclides: [
-            { name: 'Co-55', activity: 10**9 },
-            { name: 'Co-56', activity: 10**9 },
-            { name: 'Co-57', activity: 10**9 },
-            { name: 'Co-58', activity: 10**9 },
-            { name: 'Co-58m', activity: 10**9 },
-            { name: 'Co-60', activity: 10**9 },
-            { name: 'Co-60m', activity: 10**9 },
-            { name: 'Co-61', activity: 10**9 },
-            { name: 'Co-62m', activity: 10**9 },
+            { name: 'Co-55', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Co-56', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Co-57', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Co-58', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Co-58m', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Co-60', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Co-60m', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Co-61', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Co-62m', exemption_level: 10**9, t_medium: 100 },
         ]
       },
       { short: 'Ni', long: 'Nickel',       mass: 58.6934,   category: 2,
         radionuclides: [
-            { name: 'Ni-56', activity: 10**9 },
-            { name: 'Ni-57', activity: 10**9 },
-            { name: 'Ni-59', activity: 10**9 },
-            { name: 'Ni-63', activity: 10**9 },
-            { name: 'Ni-65', activity: 10**9 },
-            { name: 'Ni-66', activity: 10**9 },
+            { name: 'Ni-56', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Ni-57', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Ni-59', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Ni-63', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Ni-65', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Ni-66', exemption_level: 10**9, t_medium: 100 },
         ]
       },
       { short: 'Cu', long: 'Copper',       mass: 63.546,    category: 2,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Zn', long: 'Zinc',         mass: 65.39,     category: 2,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },    # 30
       { short: 'Ga', long: 'Gallium',      mass: 69.732,    category: 3,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Ge', long: 'Germanium',    mass: 72.64,     category: 4,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'As', long: 'Arsenic',      mass: 74.92159,  category: 4,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Se', long: 'Selenium',     mass: 78.96,     category: 5,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Br', long: 'Bromine',      mass: 79.904,    category: 6,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Kr', long: 'Krypton',      mass: 83.80,     category: 7,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Rb', long: 'Rubidium',     mass: 85.4678,   category: 0,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Sr', long: 'Strontium',    mass: 87.62,     category: 1,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Y',  long: 'Yttrium',      mass: 88.90585,  category: 2,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Zr', long: 'Zirconium',    mass: 91.224,    category: 2,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },    # 40
       { short: 'Nb', long: 'Niobium',      mass: 92.90638,  category: 2,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Mo', long: 'Molybdenum',   mass: 95.94,     category: 2,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Tc', long: 'Technetium',   mass: 98.9072,   category: 2,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Ru', long: 'Ruthenium',    mass: 101.07,    category: 2,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Rh', long: 'Rhodium',      mass: 102.9055,  category: 2,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Pd', long: 'Palladium',    mass: 106.42,    category: 2,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Ag', long: 'Silver',       mass: 107.8682,  category: 2,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Cd', long: 'Cadmium',      mass: 112.411,   category: 2,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'In', long: 'Indium',       mass: 114.818,   category: 3,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Sn', long: 'Tin',          mass: 118.71,    category: 3,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },    # 50
       { short: 'Sb', long: 'Antimony',     mass: 121.760,   category: 4,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Te', long: 'Tellurium',    mass: 127.6,     category: 4,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'I',  long: 'Iodine',       mass: 126.90447, category: 6,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Xe', long: 'Xenon',        mass: 131.29,    category: 7,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Cs', long: 'Cesium',       mass: 132.90543, category: 0,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Ba', long: 'Barium',       mass: 137.327,   category: 1,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
 
       { short: 'La', long: 'Lanthanum',    mass: 138.9055,  category:  8,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Ce', long: 'Cerium',       mass: 140.115,   category:  8,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Pr', long: 'Praseodymium', mass: 140.90765, category:  8,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Nd', long: 'Neodymium',    mass: 144.24,    category:  8,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },   # 60
       { short: 'Pm', long: 'Promethium',   mass: 144.9127,  category:  8,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Sm', long: 'Samarium',     mass: 150.36,    category:  8,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Eu', long: 'Europium',     mass: 151.9655,  category:  8,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Gd', long: 'Gadolinium',   mass: 157.25,    category:  8,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Tb', long: 'Terbium',      mass: 158.92534, category:  8,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Dy', long: 'Dysprosium',   mass: 162.50,    category:  8,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Ho', long: 'Holmium',      mass: 164.93032, category:  8,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Er', long: 'Erbium',       mass: 167.26,    category:  8,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Tm', long: 'Thulium',      mass: 168.93421, category:  8,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Yb', long: 'Ytterbium',    mass: 173.04,    category:  8,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },   # 70
       { short: 'Lu', long: 'Lutetium',     mass: 174.967,   category:  8,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
 
       { short: 'Hf', long: 'Hafnium',      mass: 178.49,    category:  2,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Ta', long: 'Tantalum',     mass: 180.9479,  category:  2,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'W',  long: 'Tungsten',     mass: 183.85,    category:  2,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Re', long: 'Rhenium',      mass: 186.207,   category:  2,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Os', long: 'Osmium',       mass: 190.23,    category:  2,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Ir', long: 'Iridium',      mass: 192.22,    category:  2,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Pt', long: 'Platinum',     mass: 195.08,    category:  2,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Au', long: 'Gold',         mass: 196.9665,  category:  2,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Hg', long: 'Mercury',      mass: 200.59,    category:  2,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },   # 80
       { short: 'Tl', long: 'Thallium',     mass: 204.3833,  category:  3,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Pb', long: 'Lead',         mass: 204.3833,  category:  3,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Bi', long: 'Bismuth',      mass: 208.98037, category:  3,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Po', long: 'Polonium',     mass: 208.9824,  category:  4,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'At', long: 'Astatine',     mass: 209.9871,  category:  6,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Rn', long: 'Radon',        mass: 222.0176,  category:  7,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Fr', long: 'Francium',     mass: 223.0197,  category:  0,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Ra', long: 'Radium',       mass: 226.0254,  category:  1,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
 
       { short: 'Ac', long: 'Actinium',     mass: 227.0278,  category:  9,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Th', long: 'Thorium',      mass: 232.0381,  category:  9,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },   # 90
       { short: 'Pa', long: 'Protactinium', mass: 231.03588, category:  9,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'U',  long: 'Uranium',      mass: 238.0289,  category:  9,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Np', long: 'Neptunium',    mass: 237.0482,  category:  9,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Pu', long: 'Plutonium',    mass: 244.0642,  category:  9,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Am', long: 'Americium',    mass: 243.0614,  category:  9,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Cm', long: 'Curium',       mass: 247.0703,  category:  9,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Bk', long: 'Berkelium',    mass: 247.0703,  category:  9,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Cf', long: 'Californium',  mass: 251.0796,  category:  9,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Es', long: 'Einsteinium',  mass: 254,       category:  9,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Fm', long: 'Fermium',      mass: 257.0951,  category:  9,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },   # 100
       { short: 'Md', long: 'Mendelevium',  mass: 258.1,     category:  9,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'No', long: 'Nobelium',     mass: 259.1009,  category:  9,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Lr', long: 'Lawrencium',   mass: 262,       category:  9,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
 
       { short: 'Rf', long: 'Rutherfordium', mass: 261, category: 2,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Db', long: 'Dubnium',      mass: 262,       category:  2,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Sg', long: 'Seaborgium',   mass: 266,       category:  2,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Bh', long: 'Bohrium',      mass: 264,       category:  2,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Hs', long: 'Hassium',      mass: 269,       category:  2,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Mt', long: 'Meitnerium',   mass: 268,       category:  2,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Ds', long: 'Darmstadium',  mass: 269,       category:  2,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },   # 110
       { short: 'Rg', long: 'Roentgenium',  mass: 272,       category:  2,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Cn', long: 'Copernicium',  mass: 277,       category:  2,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Uut', long: 'Ununtrium', mass: 286, category: 3,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Fl', long: 'Flerovium', mass: 289, category: 3,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Uup', long: 'Ununpentium', mass: 288, category: 3,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Lv', long: 'Livermorium', mass: 293, category: 3,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Uus', long: 'Ununseptium',  mass: 294,       category:  6,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       },
       { short: 'Uuo', long: 'Ununoctium',   mass: 294,       category:  7,
         radionuclides: [
-            { name: 'H-3', activity: 10**9 }
+            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
         ]
       }, # 118
   ].freeze
