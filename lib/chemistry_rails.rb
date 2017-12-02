@@ -971,6 +971,10 @@ module ChemistryRails
       ELEMENTS.select { |e| e && e[:short] == short }.first
     end
 
+    def radionuclides
+      ELEMENTS.compact.map {|e| e[:radionuclides] }.flatten
+    end
+
     def radionuclides(short)
       element(short)[:radionuclides]
     end
