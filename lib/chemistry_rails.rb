@@ -980,7 +980,7 @@ module ChemistryRails
     end
 
     def radionuclide(name)
-      ELEMENTS.compact.map {|e| e[:radionuclides] }.flatten.select{|r| r[:name] == name }.first
+      radionuclides.select{|r| r[:name] == name }.first
     end
 
     def alkali_metals
