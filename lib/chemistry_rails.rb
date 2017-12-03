@@ -971,7 +971,7 @@ module ChemistryRails
       ELEMENTS.select { |e| e && e[:short] == short }.first
     end
 
-    def radionuclides
+    def all_radionuclides
       ELEMENTS.compact.map {|e| e[:radionuclides] }.flatten
     end
 
@@ -980,7 +980,7 @@ module ChemistryRails
     end
 
     def radionuclide(name)
-      radionuclides.select{|r| r[:name] == name }.first
+      all_radionuclides.select{|r| r[:name] == name }.first
     end
 
     def alkali_metals
