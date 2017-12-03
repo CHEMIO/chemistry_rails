@@ -945,53 +945,112 @@ module ChemistryRails
       },   # 80
       { short: 'Tl', long: 'Thallium',     mass: 204.3833,  category:  3,
         radionuclides: [
-            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
+            { name: 'Tl-194', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Tl-194m', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Tl-195', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Tl-197', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Tl-198', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Tl-198m', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Tl-199', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Tl-200', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Tl-201', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Tl-202', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Tl-204', exemption_level: 10**9, t_medium: 100 },
         ]
       },
       { short: 'Pb', long: 'Lead',         mass: 204.3833,  category:  3,
         radionuclides: [
-            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
+            { name: 'Pb-195m', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Pb-198', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Pb-199', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Pb-200', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Pb-201', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Pb-202', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Pb-202m', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Pb-203', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Pb-205', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Pb-209', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Pb-210', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Pb-211', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Pb-212', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Pb-214', exemption_level: 10**9, t_medium: 100 },
         ]
       },
       { short: 'Bi', long: 'Bismuth',      mass: 208.98037, category:  3,
         radionuclides: [
-            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
+            { name: 'Bi-200', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Bi-201', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Bi-202', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Bi-203', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Bi-205', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Bi-206', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Bi-207', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Bi-210', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Bi-210m', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Bi-212', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Bi-213', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Bi-214', exemption_level: 10**9, t_medium: 100 },
         ]
       },
       { short: 'Po', long: 'Polonium',     mass: 208.9824,  category:  4,
         radionuclides: [
-            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
+            { name: 'Po-203', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Po-205', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Po-206', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Po-207', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Po-208', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Po-209', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Po-210', exemption_level: 10**9, t_medium: 100 },
         ]
       },
       { short: 'At', long: 'Astatine',     mass: 209.9871,  category:  6,
         radionuclides: [
-            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
+            { name: 'At-207', exemption_level: 10**9, t_medium: 100 },
+            { name: 'At-211', exemption_level: 10**9, t_medium: 100 },
         ]
       },
       { short: 'Rn', long: 'Radon',        mass: 222.0176,  category:  7,
         radionuclides: [
-            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
+            { name: 'Rn-220', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Rn-222', exemption_level: 10**9, t_medium: 100 },
         ]
       },
       { short: 'Fr', long: 'Francium',     mass: 223.0197,  category:  0,
         radionuclides: [
-            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
+            { name: 'Fr-222', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Fr-223', exemption_level: 10**9, t_medium: 100 },
         ]
       },
       { short: 'Ra', long: 'Radium',       mass: 226.0254,  category:  1,
         radionuclides: [
-            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
+            { name: 'Ra-223', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Ra-224', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Ra-225', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Ra-226', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Ra-227', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Ra-228', exemption_level: 10**9, t_medium: 100 },
         ]
       },
 
       { short: 'Ac', long: 'Actinium',     mass: 227.0278,  category:  9,
         radionuclides: [
-            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
+            { name: 'Ac-224', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Ac-225', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Ac-226', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Ac-227', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Ac-228', exemption_level: 10**9, t_medium: 100 },
         ]
       },
       { short: 'Th', long: 'Thorium',      mass: 232.0381,  category:  9,
         radionuclides: [
-            { name: 'H-3', exemption_level: 10**9, t_medium: 100 }
+            { name: 'Th-226', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Th-227', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Th-228', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Th-229', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Th-230', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Th-231', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Th-232', exemption_level: 10**9, t_medium: 100 },
+            { name: 'Th-234', exemption_level: 10**9, t_medium: 100 },
         ]
       },   # 90
       { short: 'Pa', long: 'Protactinium', mass: 231.03588, category:  9,
