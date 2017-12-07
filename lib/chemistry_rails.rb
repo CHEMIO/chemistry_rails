@@ -1239,6 +1239,14 @@ module ChemistryRails
       }, # 118
   ].freeze
 
+  def years(amount)
+    amount*365
+  end
+
+  def hours(amount)
+    amount/24
+  end
+
   class << self
     def elements(category = nil)
       category ? ELEMENTS.select { |e| e && e[:category] == category } : ELEMENTS
@@ -1300,13 +1308,7 @@ module ChemistryRails
       elements(9)
     end
 
-    def years(amount)
-      amount*365
-    end
 
-    def hours(amount)
-      amount/24
-    end
   end
 end
 
