@@ -682,7 +682,7 @@ module ChemistryRails
             { name: 'Eu-150', exemption_level: 10**6, t_medium: 365 * (34.2) },
             { name: 'Eu-150m', exemption_level: 10**6, t_medium: (1/24.0) * (12.6) },
             { name: 'Eu-152', exemption_level: 10**6, t_medium: 365 * (13.3) },
-            { name: 'Eu-152m', exemption_level: 10**6, t_medium: (1/24.0) * (9..32) },
+            { name: 'Eu-152m', exemption_level: 10**6, t_medium: (1/24.0) * (9.32) },
             { name: 'Eu-154', exemption_level: 10**6, t_medium: 365 * (8.80) },
             { name: 'Eu-155', exemption_level: 10**7, t_medium: 365 * (4.96) },
             { name: 'Eu-156', exemption_level: 10**6, t_medium: 15.2 },
