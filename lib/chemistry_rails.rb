@@ -1300,7 +1300,6 @@ module ChemistryRails
       elements(9)
     end
 
-    private
     def years(amount)
       amount*365
     end
