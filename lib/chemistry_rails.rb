@@ -32,12 +32,12 @@ module ChemistryRails
       },
       { short: 'N',  long: 'Nitrogen',     mass: 14.00674,  category: 5,
         radionuclides: [
-            { name: 'N-13', exemption_level: 10**9, t_medium: nil },
+            { name: 'N-13', exemption_level: 10**9, t_medium: 9.66 / 60.0 / 24.0 },
         ]
       },
       { short: 'O',  long: 'Oxygen',       mass: 15.9994,   category: 5,
         radionuclides: [
-            { name: 'O-15', exemption_level: 10**9, t_medium: nil },
+            { name: 'O-15', exemption_level: 10**9, t_medium: 2.04 / 60.0 / 24.0 },
         ]
       },
       { short: 'F',  long: 'Fluorine',     mass: 18.998403, category: 6,
@@ -47,7 +47,7 @@ module ChemistryRails
       },
       { short: 'Ne', long: 'Neon',         mass: 20.1797,   category: 7,
         radionuclides: [
-            { name: 'Ne-19', exemption_level: 10**9, t_medium: nil },
+            { name: 'Ne-19', exemption_level: 10**9, t_medium: 17.22 / 60.0 / 60.0 / 24.0 },
         ]
       },    # 10
       { short: 'Na', long: 'Sodium',       mass: 22.989768, category: 0,
@@ -92,9 +92,9 @@ module ChemistryRails
       },
       { short: 'Ar', long: 'Argon',        mass: 39.948,    category: 7,
         radionuclides: [
-            { name: 'Ar-37', exemption_level: 10**8, t_medium: nil },
-            { name: 'Ar-39', exemption_level: 10**4, t_medium: nil },
-            { name: 'Ar-41', exemption_level: 10**9, t_medium: nil }
+            { name: 'Ar-37', exemption_level: 10**8, t_medium: 34.95 / 24.0 },
+            { name: 'Ar-39', exemption_level: 10**4, t_medium: 365 * 269.2 },
+            { name: 'Ar-41', exemption_level: 10**9, t_medium: 1.83 / 24.0 }
         ]
       },
       { short: 'K',  long: 'Potassium',    mass: 39.0983,   category: 0,
@@ -269,17 +269,17 @@ module ChemistryRails
       },
       { short: 'Kr', long: 'Krypton',      mass: 83.80,     category: 7,
         radionuclides: [
-            { name: 'Kr-74', exemption_level: 10**9, t_medium: nil },
-            { name: 'Kr-76', exemption_level: 10**9, t_medium: nil },
-            { name: 'Kr-77', exemption_level: 10**9, t_medium: nil },
-            { name: 'Kr-79', exemption_level: 10**5, t_medium: nil },
-            { name: 'Kr-81', exemption_level: 10**7, t_medium: nil },
+            { name: 'Kr-74', exemption_level: 10**9, t_medium: 11.5 / 60.0 / 24.0 },
+            { name: 'Kr-76', exemption_level: 10**9, t_medium: 14.8 / 60.0 / 24.0 },
+            { name: 'Kr-77', exemption_level: 10**9, t_medium: 1.24 / 60.0 / 24.0 },
+            { name: 'Kr-79', exemption_level: 10**5, t_medium: 1.46 / 24.0 },
+            { name: 'Kr-81', exemption_level: 10**7, t_medium: 229261.79 * 365 },
             { name: 'Kr-81m', exemption_level: 10**10, t_medium: nil },
             { name: 'Kr-83m', exemption_level: 10**12, t_medium: nil },
-            { name: 'Kr-85', exemption_level: 10**4, t_medium: nil },
+            { name: 'Kr-85', exemption_level: 10**4, t_medium: 10.73 * 365 },
             { name: 'Kr-85m', exemption_level: 10**10, t_medium: nil },
-            { name: 'Kr-87', exemption_level: 10**9, t_medium: nil },
-            { name: 'Kr-88', exemption_level: 10**9, t_medium: nil },
+            { name: 'Kr-87', exemption_level: 10**9, t_medium: 1.27 / 24.0 },
+            { name: 'Kr-88', exemption_level: 10**9, t_medium: 2.83 / 24.0 },
         ]
       },
       { short: 'Rb', long: 'Rubidium',     mass: 85.4678,   category: 0,
@@ -450,7 +450,7 @@ module ChemistryRails
             { name: 'In-111', exemption_level: 10**6, t_medium: 2.83 },
             { name: 'In-112', exemption_level: 10**6, t_medium: (1/24.0) * (0.240) },
             { name: 'In-113m', exemption_level: 10**6, t_medium: (1/24.0) * (1.66) },
-            { name: 'In-114', exemption_level: 10**5, t_medium: nil },
+            { name: 'In-114', exemption_level: 10**5, t_medium: 1.2 / 60.0 / 24.0 },
             { name: 'In-114m', exemption_level: 10**6, t_medium: 49.5 },
             { name: 'In-115', exemption_level: 10**5, t_medium: 365 * (5.10*(10**15)) },
             { name: 'In-115m', exemption_level: 10**6, t_medium: (1/24.0) * (4.49) },
@@ -543,19 +543,19 @@ module ChemistryRails
       },
       { short: 'Xe', long: 'Xenon',        mass: 131.29,    category: 7,
         radionuclides: [
-            { name: 'Xe-120', exemption_level: 10**9, t_medium: nil },
-            { name: 'Xe-121', exemption_level: 10**9, t_medium: nil },
-            { name: 'Xe-122', exemption_level: 10**9, t_medium: nil },
-            { name: 'Xe-123', exemption_level: 10**9, t_medium: nil },
-            { name: 'Xe-125', exemption_level: 10**9, t_medium: nil },
-            { name: 'Xe-127', exemption_level: 10**5, t_medium: nil },
+            { name: 'Xe-120', exemption_level: 10**9, t_medium: 40 / 60.0 / 24.0 },
+            { name: 'Xe-121', exemption_level: 10**9, t_medium: 40.17 / 60.0 / 24.0 },
+            { name: 'Xe-122', exemption_level: 10**9, t_medium: 20.11 / 60.0 / 24.0 },
+            { name: 'Xe-123', exemption_level: 10**9, t_medium: 2.08 / 24.0 },
+            { name: 'Xe-125', exemption_level: 10**9, t_medium: 16.89 / 24.0 },
+            { name: 'Xe-127', exemption_level: 10**5, t_medium: 36.34 },
             { name: 'Xe-129m', exemption_level: 10**4, t_medium: nil },
             { name: 'Xe-131m', exemption_level: 10**4, t_medium: nil },
-            { name: 'Xe-133', exemption_level: 10**4, t_medium: nil },
+            { name: 'Xe-133', exemption_level: 10**4, t_medium: 5.24 },
             { name: 'Xe-133m', exemption_level: 10**4, t_medium: nil },
-            { name: 'Xe-135', exemption_level: 10**10, t_medium: nil },
+            { name: 'Xe-135', exemption_level: 10**10, t_medium: 9.14 / 24.0 },
             { name: 'Xe-135m', exemption_level: 10**9, t_medium: nil },
-            { name: 'Xe-138', exemption_level: 10**9, t_medium: nil },
+            { name: 'Xe-138', exemption_level: 10**9, t_medium: 14.08 / 60.0 / 24.0 },
         ]
       },
       { short: 'Cs', long: 'Cesium',       mass: 132.90543, category: 0,
@@ -991,10 +991,10 @@ module ChemistryRails
         radionuclides: [
             { name: 'Po-203', exemption_level: 10**6, t_medium: (1/24.0) * (0.612) },
             { name: 'Po-205', exemption_level: 10**6, t_medium: (1/24.0) * (1.80) },
-            { name: 'Po-206', exemption_level: 10**6, t_medium: nil },
+            { name: 'Po-206', exemption_level: 10**6, t_medium: 8.8 },
             { name: 'Po-207', exemption_level: 10**6, t_medium: (1/24.0) * (5.83) },
-            { name: 'Po-208', exemption_level: 10**4, t_medium: nil },
-            { name: 'Po-209', exemption_level: 10**4, t_medium: nil },
+            { name: 'Po-208', exemption_level: 10**4, t_medium: 2.9 * 365 },
+            { name: 'Po-209', exemption_level: 10**4, t_medium: 102.11 * 365 },
             { name: 'Po-210', exemption_level: 10**4, t_medium: 138.0 },
         ]
       },
@@ -1006,8 +1006,8 @@ module ChemistryRails
       },
       { short: 'Rn', long: 'Radon',        mass: 222.0176,  category:  7,
         radionuclides: [
-            { name: 'Rn-220', exemption_level: 10**7, t_medium: nil },
-            { name: 'Rn-222', exemption_level: 10**8, t_medium: nil },
+            { name: 'Rn-220', exemption_level: 10**7, t_medium: 55.6 / 60.0 / 60.0 / 24.0 },
+            { name: 'Rn-222', exemption_level: 10**8, t_medium: 3.82 },
         ]
       },
       { short: 'Fr', long: 'Francium',     mass: 223.0197,  category:  0,
