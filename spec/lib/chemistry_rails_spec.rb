@@ -8,12 +8,25 @@ describe ChemistryRails do
     expect(ChemistryRails.elements(-1)).to eq []
   end
 
+  it "should return radionuclides" do
+    expect(ChemistryRails.all_radionuclides).to be_a(Array)
+    expect(ChemistryRails.radionuclides('Cs')).to be_a(Array)
+  end
+
   it "should return an element" do
     expect(ChemistryRails.element('O')).to be_a(Hash)
     expect(ChemistryRails.element('O')).to have_key(:short)
     expect(ChemistryRails.element('O')).to have_key(:long)
     expect(ChemistryRails.element('O')).to have_key(:mass)
     expect(ChemistryRails.element('O')).to have_key(:category)
+  end
+
+  it "should return a radionuclide" do
+    expect(ChemistryRails.radionuclide('Cs-137')).to be_a(Hash)
+    expect(ChemistryRails.radionuclide('Cs-137')).to have_key(:name)
+    expect(ChemistryRails.radionuclide('Cs-137')).to have_key(:exemption_level)
+    expect(ChemistryRails.radionuclide('Cs-137')).to have_key(:t_medium)
+    expect(ChemistryRails.radionuclide('Cs-137')).to have_key(:d_value)
   end
 
 end
