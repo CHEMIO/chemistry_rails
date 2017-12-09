@@ -104,7 +104,10 @@ the module contains several useful methods:
          ...
        ] 
   ```
- * `radionuclide(name)` - returns specific radionuclide by name
+ * `radionuclide(name)` - returns specific radionuclide by name. 
+                      Exemption Level(:exemption_level) and D values(:d_value) 
+                      for radionuclides are given in Becquerel(Bq) and 
+                      T1/2(:t_medium) is given in days
   ```
    > ChemistryRails.radionuclide('Cs-137')
     => {:name=>"Cs-137", :exemption_level=>10000, :t_medium=>10950, :d_value=>(100000000000/1)}
