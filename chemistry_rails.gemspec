@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'chemistry_rails'
-  s.version     = '0.2.3'
+  s.version     = '0.2.5'
   s.date        = '2014-06-16'
   s.summary     = "Chemistry rails"
   s.description = "A gem for validating chemical formula and calculating elemental analysis"
