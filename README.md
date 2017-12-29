@@ -95,6 +95,7 @@ the module contains several useful methods:
  * `lanthanides`
  * `actinides`
  * `all_radionuclides`
+ * `element_by_radionuclide(name)`
  * `radionuclides(label)` - returns radionuclides of a specific element
   ```
    > ChemistryRails.radionuclides('Cs')

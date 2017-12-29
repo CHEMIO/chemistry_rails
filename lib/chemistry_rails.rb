@@ -1261,6 +1261,11 @@ module ChemistryRails
       all_radionuclides.select{|r| r[:name] == name }.first
     end
 
+    def element_by_radionuclide(name)
+      short = name.split('-')[0]
+      element(short)
+    end
+
     def alkali_metals
       elements(0)
     end
