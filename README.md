@@ -1,7 +1,7 @@
 # Chemistry on Rails
 ===============
 
-A gem for validating chemical formula and calculating elemental analysis
+A gem for validating chemical formula, calculating elemental analysis and radionuclides data.
 
 ## Installation
 
@@ -94,6 +94,25 @@ the module contains several useful methods:
  * `noble_gases`
  * `lanthanides`
  * `actinides`
+ * `all_radionuclides`
+ * `element_by_radionuclide(name)`
+ * `radionuclides(label)` - returns radionuclides of a specific element
+  ```
+   > ChemistryRails.radionuclides('Cs')
+    => [
+         {:name=>"Cs-125", :exemption_level=>10000, :t_medium=>0.03125, :d_value=>nil},
+         {:name=>"Cs-127", :exemption_level=>100000, :t_medium=>0.26041666666666663, :d_value=>nil},
+         ...
+       ] 
+  ```
+ * `radionuclide(name)` - returns specific radionuclide by name. 
+                      Exemption Level(:exemption_level) and D values(:d_value) 
+                      for radionuclides are given in Becquerel(Bq) and 
+                      T1/2(:t_medium) is given in days
+  ```
+   > ChemistryRails.radionuclide('Cs-137')
+    => {:name=>"Cs-137", :exemption_level=>10000, :t_medium=>10950, :d_value=>(100000000000/1)}
+  ```
 
 constants:
 
